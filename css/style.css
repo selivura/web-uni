@@ -322,12 +322,10 @@ body
     width: 380px;
     height: 85px;
     border-radius: 8px;
-    background-color: #F2F6FA;
     border: #F2F6FA;
     color: #7E868E;
-    background-image: url("../img/phone_img_2.png");
-    background-position: 10px 10px;
-    background-repeat: no-repeat;
+    background: url("../img/phone_img_2.png") no-repeat scroll 30px 37.5px #F2F6FA;
+    padding-left:58px;
     display: flex;
     flex-direction: row;
     margin-right: 20px;
@@ -339,6 +337,7 @@ body
     border-radius: 8px;
     border: #FED84C;
     font-family: "Montserrat";
+    font-weight: 500;
     font-size: 18px;
 
     width: 380px;
@@ -348,4 +347,11 @@ body
 {
     font-family: "Montserrat";
     font-size: 11px;
+    display: flex;
+    flex-direction: row;
+}
+.form_label
+{
+    display: block;
+    padding-top: 3px;
 }
