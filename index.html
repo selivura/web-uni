@@ -8,14 +8,6 @@
     </head>
      <header class="header_section">
         <p1 class="header_topleft"> Сладкий сундук </p1>
-        <!-- <ul class="header_list">
-            <li class="header_list_item">WORKS</li>
-            <li class="header_list_item">ABOUT</li>
-            <li class="header_list_item">SERVICES</li>
-            <li class="header_list_item">BLOG</li>
-            <li class="header_list_item">CONTACT</li>
-        </ul> -->
-
         <section class="header_adress">
             <img class="header_adress_img" src="img/adress_img.png">
             <p class="header_adress_text">ул. Пушкина д. Колотушкина</p>
@@ -153,11 +145,11 @@
                     </div>
                     <form class="form_fields_checkbox"> 
                         <div class="form_fields">
-                            <input class="form_field" type="text"  placeholder="Номер телефона">
+                            <input class="form_field" type="tel"  pattern="[+]{1}[0-9]{11}" placeholder="Номер телефона (+12345678901)" required>
                             <button type="submit" class="form_submit">Сделать заказ </button>
                         </div>
                         <div  class="form_checkbox">
-                            <input type="checkbox" id="personal_data">
+                            <input type="checkbox" id="personal_data" required>
                             <label class = form_label for="personal_data">Нажамая на кнопку, вы соглашаетесь с <u>условиями обработки персональных данных</u> </label>    
                         </div>
                     </form>
