@@ -35,6 +35,32 @@
     </header>
 
     <body>
+        <div class="preloader" id="preloader"> LOADING...</div>
+
+        <script>
+            function closepreloader()
+            {
+                fadeOut("preloader");
+            }
+            window.addEventListener("load",function(){
+                setTimeout(closepreloader, 2000);
+            });
+
+            function fadeOut(element) 
+            {
+                var el = document.getElementById(element);
+                el.style.opacity = 1;
+                setInterval(function() 
+                {
+                    var opacity = el.style.opacity;
+                    if (opacity > 0) 
+                    {
+                        opacity -= 0.05;
+                        el.style.opacity = opacity;
+                    }
+                }, 50);
+            }
+        </script>
 
         <section class="main">
         <div class="main_upper_panel">
@@ -163,5 +189,6 @@
                     </form>
                 </div>
         </section>
+        
     </body> 
 </html>

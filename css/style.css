@@ -355,3 +355,19 @@ body
     display: block;
     padding-top: 3px;
 }
+.preloader
+{
+    font-family: "Montserrat";
+    font-size: 25px;
+    color: white;
+    opacity: 1.0;
+    
+    background : black url("../img/shower-cat.gif") no-repeat center center;
+    background-size: 20%;
+    height: 100%;
+    width: 100%;
+    top:0;
+    left:0;
+    position: fixed;
+    z-index: 100;
+}
