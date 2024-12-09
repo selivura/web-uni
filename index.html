@@ -50,6 +50,10 @@
                         opacity -= 0.05;
                         el.style.opacity = opacity;
                     }
+                    if(opacity <= 0)
+                    {
+                        el.hidden = true;
+                    }
                 }, 50);
             }
         </script>
